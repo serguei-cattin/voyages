@@ -1,0 +1,96 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: 'Beauty';
+	src: url(../FONTS/BeautyDemo.ttf), url(../FONTS/BeautyDemo.otf);
+}
+*  {
+	font-family: 'Beauty';
+}
+.hover1 p {
+	font-size: 60px;
+}
+.hover2 p {
+	font-size: 60px;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	display: flex;
+	background-image: url(../IMG/HEADER/banniere-test.jpg);
+	width: 100vw;
+	height: 400px;
+}
+.flexdirection {
+	display: flex;
+	justify-content: space-evenly;
+}
+.hover1{
+	display: flex;
+	margin-left: 300px;
+	margin-right: 100px;
+	padding-top: 70px;
+	color: #01b6ff;
+}
+.hover2{
+	display: flex;
+	padding-top: 70px;
+	color: #01b6ff;
+}
+#icon1 {
+	padding-top: 64px;
+	margin-right: 25px;
+	font-size: 50px;
+}
+.continentnavigation {
+	display: none;
+}
+.guidenavigation {
+	display: none;
+}
+.hover1:hover .continentnavigation {
+	display: inline-block;
+	position: absolute;
+	top: 190px;
+	color: #ff936a;
+}
+.hover2:hover .guidenavigation {
+	display: inline-block;
+	position: absolute;
+	top: 190px;
+	color: #ff936a;
+}
+.logo {
+	width: 500px;
+	height: auto;
+	margin-right: 100px;
+}
+
+.hover2:hover #icon1 {
+	color: #ff936a;
+
+}
+.hover2:hover p {
+	color: #ff936a;
+
+}
+.hover1:hover #icon1 {
+	color: #ff936a;
+
+}
+.hover1:hover p {
+	color: #ff936a;
+
+}
+.guidenavigation li {
+	font-size: 46px;
+	list-style: none;
+}
+.continentnavigation li {
+	font-size: 46px;
+	list-style: none;
+}
