@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    padding-top: 32px;
+}
+
+nav p {
+    vertical-align: middle;
+}
+
+.title, .titletrad {
+    display: flex;
+    justify-content: center;
+    animation: grow 1.5s;
+}
+
+.title p {
+    font-size: 50px;
+    transition: 1s;
+}
+.title p:after {
+    content: "안녕하세요 !";
+    font-size: 50px;
+}
+.title p:hover:after {
+    content: "Bonjour !";
+    font-size: 50px;
+    font-family: ;
+}
+
+main p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Animations */
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes grow2 {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.subtitles {
+    font-size: 40px;
+    animation: grow 2.5s;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+/* Grids */
+.intro {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    background-image: linear-gradient(43deg, #17781c 0%, #5094c8 46%, #e9b1cd 100%);
+}
+.intro img {
+    height: 600px;
+    width: 1000px;
+    margin: 10px 30px 10px 0px;
+    border-radius: 5%;
+}
+
+.technos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 25px;
+    background-color: #000000;
+    background-image: linear-gradient(90deg, #181A17 0%, #E9E8E4 100%);
+}
+.technos img {
+    height: 600px;
+    width: 1000px;
+    margin: 10px 0px 10px 30px;
+    border-radius: 5%;
+}
+
+.societe {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 25px;
+    background-image: linear-gradient(43deg, #DAC7B5 0%, #435955 46%, #B9CAD4 100%);
+}
+.societe img {
+    height: 600px;
+    width: 1000px;
+    margin: 10px 30px 10px 0px;
+    border-radius: 5%;
+}
