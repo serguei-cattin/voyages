@@ -7,31 +7,58 @@ html{
 
 *{
 	font-family: 'Lobster', cursive;
-	border-radius: 2vw;
+	border-radius: 1.3vw;
 }
 
 .intro-master{
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.intro{
-	position: relative;
-	z-index: 1;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90vmax;
-	height: auto;
-	max-width: 85vmax;
-	background-color: #FEC200;
+.diapo{
+	-webkit-animation-name: diapo1;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running ;
+
+   -moz-animation-name: diapo1;
+    -moz-animation-duration: 20s;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+
+	width: 50vmax;
+	height: 50vmax;
+	margin: 0 auto;
+	background: no-repeat;
+	background-image: url(../IMG/SWEDEN/background/suede1.jpg);
+	animation-name: diapo1;
+	animation-duration: 20s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-play-state: running;
+	display: flex;
+	justify-content: center;
+}
+
+@keyframes diapo1{
+	0%{background-image: url(../IMG/SWEDEN/background/suede1.jpg);}
+	25%{background-image: url(../IMG/SWEDEN/background/suede6.jpg);}
+	50%{background-image: url(../IMG/SWEDEN/background/suede3.jpg);}
+	75%{background-image: url(../IMG/SWEDEN/background/suede4.jpg);}
+	100%{background-image: url(../IMG/SWEDEN/background/suede5.jpg);}
 }
 
 .welcome{
 	display: flex;
 	z-index: 2;
 	position: absolute;
-	color: #FEC200;
+	color: #fec200;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -42,18 +69,21 @@ html{
 .first-lane{
 	display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
     grid-column-gap: 50px;
     grid-row-gap: 5px;
+    padding: 1vw;
+    margin-top: 1vw;
     border: 50px;	
     text-align: center;
-    text-justify: center;
+    background-color: #fec200;
 }
 
 #title1{
 	grid-row: 1;
 	grid-column: 2;
 	font-size: 2em;
+	color: #0E5188;
 	
 }
 
@@ -61,44 +91,50 @@ html{
 	font-size: 1.5em;
 	grid-row: 3;
 	grid-column: 1;
-    background-color: #FEC200;
+    background-color: #0E5188;
+    color: #fec200;
 }
 
 #two{
 	grid-row: 4;
 	grid-column: 1;
-    background-color: #FEC200;
+    background-color: #0E5188;
+    color: #fec200;
 }
 
 #three{
 	grid-row: 3;
 	grid-column: 2;
 	font-size: 1.5em;
-    background-color: #FEC200;
+    background-color: #0E5188;
+    color: #fec200;
 	
 }
 
 #four{
 	grid-row: 4;
 	grid-column: 2;
-    background-color: #FEC200;
+    background-color: #0E5188;
+    color: #fec200;
 }
 
 #five{
 	font-size: 1.5em;
 	grid-column: 3;
 	grid-row: 3;
-	background-color: #FEC200;
+	background-color: #0E5188;
+    color: #fec200;
 }
 
 #six{
 	grid-column: 3;
 	grid-row: 4;
-	background-color: #FEC200;
+	background-color: #0E5188;
+    color: #fec200;
 }
 
 #learn{
-	background-color: #FEC200;	
+	background-color: #0E5188;	
 	grid-row: 2;
 	grid-column: 1;
 	justify-content: center;
@@ -108,9 +144,9 @@ html{
 }
 
 #info{
-	background-color: #FEC200;	
+	background-color: #0E5188;	
 	grid-row: 2;
-	grid-column: 2;
+	grid-column: 1;
 	justify-content: center;
 	align-items: center;
 	margin-left: auto;
@@ -118,11 +154,26 @@ html{
 }
 
 #map{
-	background-color: #FEC200;	
+	background-color: #0E5188;	
 	grid-row: 2;
 	grid-column: 3;
 	justify-content: center;
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.second-lane{
+    text-align: center;
+    background-color: #b3b3b3;
+}
+
+a {
+	text-decoration: underline red;
+	color: #fec200;
+}
+
+#moar{
+	color: black;
+
 }
