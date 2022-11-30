@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Scot";
+    src: url(../CSS/BethiaDastin-0Wrnv.otf);
+}
+* {
+    font-family: Scot;
+    list-style: none;
+    margin: 0;
+    
+}
+body {
+    background: url(/IMG/Scotland.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    
+}
+h1 {
+    animation-name: slide;
+}
+h2 {
+  font-size: 20vh;
+}
+#pres {
+    translate: 50px 50px;
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 4px #021337;
+}
+#pres img {
+    height: 175px;
+    width: 300px;
+}
+#descr {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    background-color: #021337;
+    opacity: 0.75;
+    border-radius: 50px;
+    margin: 20px 100px 0px 100px;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-bottom: 20px;
+}
+#title {
+  background-color: white;
+  opacity: 0.95;
+  font-size: 30px;
+  color: #021337;
+  text-align: center;
+  margin: 25px 20px 0px 20px;
+  border-radius: 15px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 25px;
+    text-shadow: 1px 1px black;
+    align-items: center;
+    background: #021337;
+    color: white;
+}
+.container img {
+  border-radius: 50px;
+  width: 50vw;
+  height: 50vh;
+}
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr;
+  grid-column-gap: 20px;
+  color: #021337;
+    text-shadow: 1px 1px white;
+    font-size: 4vw;
+}
+.container2 img {
+  border-radius: 20px;
+  width: 30vw;
+  height: 50vh;
+}
+.diapo1{
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+    border: 3px solid black;
+    background-image: url(/IMG/Edinburgh-Castle.jpg);
+    animation-name: diapo1;
+    animation-duration: 20s;
+    animation-timing-function: ease-out 100ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running ;
+}
+@keyframes diapo1{
+  0%{background-image: url(/IMG/Edinburgh-Castle.jpg);}
+  25%{background-image: url(/IMG/Edinburgh-Castle-2.jpg);}
+  50%{background-image: url(/IMG/Edinburgh-Castle-3.jpg);}
+  75%{background-image: url(/IMG/Edinburgh-Castle-4.jpg);}
+  100%{background-image: url(/IMG/Edinburgh-Castle-5.jpg);}
+}
+.diapo2{
+  margin: 0 auto;
+  width: 700px;
+  height: 500px;
+  border: 3px solid black;
+  background-image: url(/IMG/St-Giles.jpg);
+  animation-name: diapo2;
+  animation-duration: 20s;
+  animation-timing-function: ease-out 100ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running ;
+}
+@keyframes diapo2{
+0%{background-image: url(/IMG/St-Giles.jpg);}
+25%{background-image: url(/IMG/St-Giles-2.jpg);}
+50%{background-image: url(/IMG/St-Giles-3.jpg);}
+75%{background-image: url(/IMG/St-Giles-4.jpg);}
+100%{background-image: url(/IMG/St-Giles-5.jpg);}
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 30vw;
+  height: 70vh;
+  border: 0px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #021337;
+  color: white;
+  transform: rotateY(180deg);
+  font-size: 2vw;
+}
