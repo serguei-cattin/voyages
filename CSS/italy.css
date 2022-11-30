@@ -2,15 +2,19 @@ body{
     background-image: linear-gradient(to right, #029246, #FBFBFB, #d02c38);
 }
 
-
-
 /* Main*/
+
+main{
+    height: 10000px ;
+    width: 100vw;
+}
+
 #presentation h1 {
     color: red;
     text-align: center;
     text-decoration: underline;
     font-family:'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #presentation p{
@@ -84,4 +88,27 @@ body{
 #gif {
     translate: 650px;
 }
-    
+
+#fontaine h1{
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;   
+}
+
+#fontaine p{
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: -400px;
+    margin-left: 560px;
+}
+
+#trevis {
+    translate: -20px;
+}
+#vatican {
+    margin-top: 300px;
+}
