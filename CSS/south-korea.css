@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header {
@@ -20,15 +23,18 @@ nav p {
     vertical-align: middle;
 }
 
-.title, .titletrad {
+main a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+/* Trad Coréen --> Français */
+.title {
     display: flex;
     justify-content: center;
     animation: grow 1.5s;
 }
-
 .title p {
     font-size: 50px;
-    transition: 1s;
 }
 .title p:after {
     content: "안녕하세요 !";
@@ -36,13 +42,70 @@ nav p {
 }
 .title p:hover:after {
     content: "Bonjour !";
-    font-size: 50px;
-    font-family: ;
+    font-size: 57px;
 }
-
-main p {
-    margin-left: 10px;
-    margin-right: 10px;
+/* Introduction */
+.subtitles:after {
+    content: "소개하다";
+    font-size: 50px;
+}
+.subtitles:hover:after {
+    content: "Introduction";
+    font-size: 57px;
+}
+/* Technologies */
+.subtitles2:after {
+    content: "기술";
+    font-size: 50px;
+}
+.subtitles2:hover:after {
+    content: "Technologies";
+    font-size: 57px;
+}
+/* La société */
+.subtitles3:after {
+    content: "한국사회";
+    font-size: 50px;
+}
+.subtitles3:hover:after {
+    content: "La société coréenne";
+    font-size: 40px;
+}
+/* Specialités */
+.subtitles4:after {
+    content: "한국 특산품";
+    font-size: 50px;
+}
+.subtitles4:hover:after {
+    content: "Les spécialités coréennes";
+    font-size: 40px;
+}
+/* Jeux-vidéos */
+.subtitles5:after {
+    content: "비디오 게임";
+    font-size: 50px;
+}
+.subtitles5:hover:after {
+    content: "Les jeux vidéos";
+    font-size: 40px;
+}
+/* L'esport */
+.subtitles6:after {
+    content: "e스포츠";
+    font-size: 50px;
+}
+.subtitles6:hover:after {
+    content: "Esport";
+    font-size: 40px;
+}
+/* Lieux touristiques */
+.subtitles7:after {
+    content: "관광지";
+    font-size: 50px;
+}
+.subtitles7:hover:after {
+    content: "Lieux touristiques";
+    font-size: 40px;
 }
 
 /* Animations */
@@ -63,6 +126,7 @@ main p {
     }
 }
 
+/* Animations, taille d'écritures, ombres et couleurs des grands titres */
 .subtitles {
     font-size: 40px;
     animation: grow 2.5s;
@@ -70,8 +134,50 @@ main p {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
+.subtitles2 {
+    font-size: 40px;
+    animation: grow 2.5s;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.subtitles3 {
+    font-size: 40px;
+    animation: grow 2.5s;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.subtitles4 {
+    font-size: 40px;
+    animation: grow 2.5s;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.subtitles5 {
+    font-size: 40px;
+    animation: grow 2.5s;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.subtitles6 {
+    font-size: 40px;
+    animation: grow 2.5s;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.subtitles7 {
+    font-size: 40px;
+    animation: grow 2.5s;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
 
-/* Grids */
+/* Sections avec grids et images */
 .intro {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -100,7 +206,7 @@ main p {
     align-items: center;
     margin-top: 25px;
     background-color: #000000;
-    background-image: linear-gradient(90deg, #181A17 0%, #E9E8E4 100%);
+    background-image: linear-gradient(90deg, #0e0e0e 0%, #b0b468 100%);
 }
 .technos img {
     height: 600px;
@@ -118,9 +224,82 @@ main p {
     justify-items: center;
     align-items: center;
     margin-top: 25px;
-    background-image: linear-gradient(43deg, #DAC7B5 0%, #435955 46%, #B9CAD4 100%);
+    background-image: linear-gradient(43deg, #9C5B5C 0%, #435955 46%, #1B242C 100%);
 }
 .societe img {
+    height: 600px;
+    width: 1000px;
+    margin: 10px 30px 10px 0px;
+    border-radius: 5%;
+}
+
+.specialites {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 25px;
+    background-color: #000000;
+    background-image: linear-gradient(90deg, #F4C735 0%, #F25202 100%);
+}
+.specialites img {
+    height: 600px;
+    width: 1000px;
+    margin: 10px 0px 10px 30px;
+    border-radius: 5%;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 25px;
+    background-image: linear-gradient(43deg, #5B7135 0%, #67633b 46%, #1D2A1C 100%);
+}
+.games img {
+    height: 600px;
+    width: 1000px;
+    margin: 10px 30px 10px 0px;
+    border-radius: 5%;
+}
+
+.esport {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 25px;
+    background-image: linear-gradient(43deg, #133A49 0%, #FF0044 46%, #6AA4F4 100%);
+}
+.esport img {
+    height: 600px;
+    width: 1000px;
+    margin: 10px 0px 10px 30px;
+    border-radius: 5%;
+}
+
+.touristicplaces {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 25px;
+    background-image: linear-gradient(43deg, #88c200 0%, #cd9f7a 46%, #b804ea 100%);       
+}
+.touristicplaces img {
     height: 600px;
     width: 1000px;
     margin: 10px 30px 10px 0px;
