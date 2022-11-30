@@ -6,24 +6,32 @@ html {
 	font-family: 'Beauty';
 	src: url(../FONTS/BeautyDemo.ttf), url(../FONTS/BeautyDemo.otf);
 }
+@font-face {
+	font-family: 'Ubuntu';
+	src: url(../FONTS/ubuntu-title-fr-1.1.ttf), url(../FONTS.Ubuntu-Title.ttf);
+}
 *  {
 	font-family: 'Beauty';
 }
-.hover1 p {
-	font-size: 60px;
-}
-.hover2 p {
-	font-size: 60px;
-}
+
 body {
 	margin: 0;
 	padding: 0;
 }
 header {
 	display: flex;
-	background-image: url(../IMG/HEADER/banniere-test.jpg);
+	background-image: url(../IMG/HEADER/banniere2.png);
+	opacity: 0.8;
 	width: 100vw;
-	height: 400px;
+	height: 200px;
+
+}.hover1 p {
+	font-size: 60px;
+	margin-top: 0;
+}
+.hover2 p {
+	font-size: 60px;
+	margin-top: 0;
 }
 .flexdirection {
 	display: flex;
@@ -31,18 +39,19 @@ header {
 }
 .hover1{
 	display: flex;
-	margin-left: 300px;
+	margin-left: 450px;
 	margin-right: 100px;
 	padding-top: 70px;
 	color: #01b6ff;
+	z-index: 3;
 }
 .hover2{
 	display: flex;
 	padding-top: 70px;
 	color: #01b6ff;
+	z-index: 3;
 }
 #icon1 {
-	padding-top: 64px;
 	margin-right: 25px;
 	font-size: 50px;
 }
@@ -65,9 +74,10 @@ header {
 	color: #ff936a;
 }
 .logo {
-	width: 500px;
-	height: auto;
+	width: autow;
+	height: 180px;
 	margin-right: 100px;
+	padding-top: 10px;
 }
 
 .hover2:hover #icon1 {
@@ -93,4 +103,23 @@ header {
 .continentnavigation li {
 	font-size: 46px;
 	list-style: none;
+}
+li {
+	font-family: 'Ubuntu';
+}
+.nuage {
+	position: absolute;
+	z-index: 1;
+	left: 270px;
+	top: 40px;
+	width: auto;
+	height: 115px;
+}
+.nuage2 {
+	position: absolute;
+	z-index: 1;
+	left: 1110px;
+	top: 10px;
+	width: auto;
+	height: 155px;
 }
