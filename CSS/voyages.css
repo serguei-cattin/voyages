@@ -23,7 +23,8 @@ header {
 	background-image: url(../IMG/HEADER/banniere2.png);
 	opacity: 0.8;
 	width: 100vw;
-	height: 200px;
+	height: 250px;
+
 
 }.hover1 p {
 	font-size: 60px;
@@ -122,4 +123,73 @@ li {
 	top: 10px;
 	width: auto;
 	height: 155px;
+}
+footer {
+	background-color: #01b6ff;
+	height: 50px;
+	width: 100vw;
+	margin-top: -50px;
+}
+.footertxt {
+	font-size: 50px;
+	padding-left: 100px;
+	font-family: fantasy;
+}
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #01b6ff;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+button:hover, button:focus {
+  color: #01b6ff;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #01b6ff;
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+button {
+	background-color: transparent;
+	border: none;
 }
