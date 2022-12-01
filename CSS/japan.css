@@ -1,1 +1,11 @@
+main {
+	width: 100vw;
+	height: 2000px;
+}
+.abstract {
 
+}
+.title {
+	border-bottom: 2px solid black;
+	width: 500px;
+}
