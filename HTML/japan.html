@@ -7,17 +7,22 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/voyages.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/japan.css">
 	<link href="../FONTS/fontawesome/css/all.css" rel="stylesheet">
+	<script type="text/javascript">
+		$("figure").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+	</script>
 </head>
 <body>
 	<header>
-		<img class="nuage" src="../IMG/HEADER/nuage2.png">
-		<img class="nuage2" src="../IMG/HEADER/nuage1.png">
 		<div class="hover1">	
 			<i id="icon1" class="fa fa-plane" aria-hidden="true"></i>
 			<p class="texte">Destinations</p>
 			<nav class="continentnavigation">
 				<ul>
-					<li onclick="window.location.href ='scotland.html'" class="contry1">Scotland</li>
+					<li onclick="window.location.href ='scotlanimgokisawad.html'" class="contry1">Scotland</li>
 					<li onclick="window.location.href ='italy.html'" class="country2">Italy</li>
 					<li onclick="window.location.href ='japan.html'" class="country3">Japan</li>
 					<li onclick="window.location.href ='sweden.html'" class="country4">Sweden</li>
@@ -45,8 +50,59 @@
 	<main>
 		<section class="abstract">
 			<h1 class="title">Nos Offres Voyages</h1>
+			<div id="slideshow">
+				<ul id="sContent">
+					<li>
+						<figure class="snip1361-2">
+					  		<img onclick="window.location.href ='#tokyo'" class="imgtokyo" src="../IMG//JAPAN/IMGABSTRACT/tokyo.jpg" alt="Tokyo"/>
+					  		<figcaption>
+								<h3>Tokyo</h3>
+								<p>Week End Familial</p>
+					  		</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure class="snip1361">
+							<img onclick="window.location.href ='#osaka'" src="../IMG//JAPAN/IMGABSTRACT/osaka.jpg" alt="Osaka" />
+						  	<figcaption>
+						    	<h3>Osaka</h3>
+						    	<p>Semaine entière à Osaka pour 4 personnes</p>
+						  	</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure class="snip1361-3">
+							<img onclick="window.location.href ='#okinawa'" src="../IMG//JAPAN/IMGABSTRACT/okinawa2.jpg" alt="Okinawa" />
+					  		<figcaption>
+					    		<h3>Okinawa</h3>
+					    		<p>fqsfjqlskfqlks</p>
+					  		</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure class="snip1361-4">
+							<img onclick="window.location.href ='#kyoto'" src="../IMG//JAPAN/IMGABSTRACT/kyoto.jpg" alt="Kyoto" />
+					  		<figcaption>
+					    		<h3>Kyoto</h3>
+					    		<p>fqsfjqlskfqlks</p>
+					  		</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure class="snip1361-5">
+							<img onclick="window.location.href ='#montfuji'" src="../IMG//JAPAN/IMGABSTRACT/montfuji.jpg" alt="Mont Fuji" />
+					  		<figcaption>
+					    		<h3>Mont Fuji</h3>
+					    		<p>fqsfjqlskfqlks</p>
+					  		</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>	
 		</section>
-		
+		<section id="">
+			
+		</section>
 	</main>
 	<footer class="footertxt">
 		<p>© BrasCassCorporation. Tous droits réservés. | Mentions légales | Cookies</p>
