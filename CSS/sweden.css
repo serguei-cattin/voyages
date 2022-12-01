@@ -2,12 +2,39 @@ html{
 	padding: 0;
 	margin: 0;
 	background-color: #0E5188;
-	font-size: 14px;
+	font-size: 25px;
+	overflow-x: hidden;
 }
 
-*{
-	font-family: 'Lobster', cursive;
+@font-face {
+    font-family: 'viking';
+    src: url('../FONTS/Myrkvior.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*:not(header, footer){
+	font-family: 'viking', cursive;
 	border-radius: 1.3vw;
+}
+
+h1{
+	font-family: 'lobster', cursive;
+	border-radius: 1.3vw;
+}
+
+header{
+	margin-bottom: 2vw;
+}
+
+footer{
+	margin-top: 2vw;
+}
+
+h2{
+	font-family: 'lobster', cursive;
+
 }
 
 .intro-master{
@@ -15,6 +42,8 @@ html{
 	justify-content: center;
 	align-items: center;
 }
+
+/*--3 version pour faire un diapo de 5 images compatibles, certains seront utilisé plutot que d'autres en fonction des navigateurs--*/
 
 .diapo{
 	-webkit-animation-name: diapo1;
@@ -46,6 +75,8 @@ html{
 	justify-content: center;
 }
 
+/*--Keyframe permettant la définition des images sélectionné en fonction du temps--*/
+
 @keyframes diapo1{
 	0%{background-image: url(../IMG/SWEDEN/background/suede1.jpg);}
 	25%{background-image: url(../IMG/SWEDEN/background/suede6.jpg);}
@@ -66,14 +97,16 @@ html{
 	font-size: 3em;
 }
 
+/*--dispotision grille pour les informations "Découverte de la Suède"--*/
+
 .first-lane{
 	display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 0.7fr 0.7fr;
     grid-template-columns: 2fr 1fr 2fr;
     grid-column-gap: 50px;
     grid-row-gap: 5px;
     padding: 1vw;
-    margin-top: 1vw;
+    margin-top: 2vw;
     border: 50px;	
     text-align: center;
     background-color: #fec200;
@@ -146,6 +179,8 @@ html{
 #info{
 	background-color: #0E5188;	
 	grid-row: 2;
+	width: 3vw;
+	height: auto;
 	grid-column: 1;
 	justify-content: center;
 	align-items: center;
@@ -157,23 +192,87 @@ html{
 	background-color: #0E5188;	
 	grid-row: 2;
 	grid-column: 3;
+	width: 3vw;
+	height: auto;
 	justify-content: center;
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/*--dispotision grille pour les informations "Les lieux importants"--*/
+
 .second-lane{
     text-align: center;
     background-color: #b3b3b3;
+    display: grid;
 }
 
-a {
+.grid-txt{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 2vw;
+    grid-column-gap: 2vw;
+    padding: 2vw;
+}
+
+a{
 	text-decoration: underline red;
 	color: #fec200;
 }
 
+#infoed{
+	margin-top: 2vw;
+}
+
+#maped{
+	margin-top: 2vw;
+}
 #moar{
 	color: black;
+}
 
+span{
+	font-size: 1.2em;
+	color: #0e5188;
+}
+
+#txtone{
+	grid-row: 1;
+	grid-column: 1;
+}
+
+#txttwo{
+	grid-row: 2;
+	grid-column: 2;
+}
+
+#txtone{
+	grid-row: 3;
+	grid-column: 1;
+}
+
+.imgone{
+ 	background: url("../IMG/SWEDEN/where/Stockholm.jpg");
+ 	grid-column: 2;
+ 	grid-row: 1;
+ 	background-size: cover;
+ 	 background-repeat: no-repeat;
+}
+
+.imgtwo{
+	background: url("../IMG/SWEDEN/where/Sarek.jpg");
+	grid-column: 1;
+	grid-row: 2;
+	background-size: cover;
+ 	 background-repeat: no-repeat;
+}
+
+.imgthree{
+	background: url("../IMG/SWEDEN/where/Wonder.jpg");
+	grid-row: 3;
+	grid-column: 2;
+	background-size: cover;
+ 	 background-repeat: no-repeat;
 }
