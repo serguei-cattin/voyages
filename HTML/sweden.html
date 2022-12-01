@@ -2,107 +2,210 @@
 
 <html lang="fr">
 
-	<head>
+		<head>
 
-		<link rel="icon" href="../IMG/SWEDEN/icon.png">
+			<link rel="icon" href="../IMG/SWEDEN/icon.png">
 
-		<meta charset="utf-8">
+			<meta charset="utf-8">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>La Suède: un voyage inoubliable </title>
+			<title>La Suède: un voyage inoubliable </title>
 
-		<style>
-		
-			@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-		
-		</style>
-		
-		<link rel="stylesheet" type="text/css" href="../CSS/index.css">
-
-		<link rel="stylesheet" type="text/css" href="../CSS/sweden.css">
-
-	</head>
-
-	<body>
-
-		<header> <!-- header commun entre chaque page du site -->
+			<style>
 			
-			<li>index</li>	<li>USA</li>	<li>corée du nord</li>	<li>écosse</li>
+				@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+			
+			</style>
+			
+			<link rel="stylesheet" type="text/css" href="../CSS/voyages.css">
 
-		</header>
+			<link rel="stylesheet" type="text/css" href="../CSS/sweden.css">
 
+		</head>
 
-		<main>
+		<body>
 
-			<div class="intro-master">
-				<p class="diapo" alt="short video showing some swedish spots"></p>
+	<!--header commun à toutes les pages-->
+			<header>
+					
+					<img class="nuage" src="../IMG/HEADER/nuage2.png">
+					<img class="nuage2" src="../IMG/HEADER/nuage1.png">
 				
-				<h1 class="welcome">
+				<div class="hover1">
 				
-					Välkommen till Sverige !!
+					<i id="icon1" class="fa fa-plane" aria-hidden="true"></i>
+					<p class="texte">Destinations</p>
 				
-				</h1>
-			</div>
+					<nav class="continentnavigation">
+				
+						<ul>
+				
+							<li onclick="window.location.href ='../HTML/scotland.html'" class="contry1">Scotland</li>
+							<li onclick="window.location.href ='../HTML/italy.html'" class="country2">Italy</li>
+							<li onclick="window.location.href ='../HTML/japan.html'" class="country3">Japan</li>
+							<li onclick="window.location.href ='../HTML/sweden.html'" class="country4">Sweden</li>
+							<li onclick="window.location.href ='../HTML/south-korea.html'" class="country5">South Korea</li>
+							<li onclick="window.location.href ='../HTML/usa.html'" class="country6">United States of America</li>
+				
+						</ul>
+				
+					</nav>
+				
+				</div>
+			
+					<img class="logo" src="../IMG/HEADER/Logo.png">
+					
+					<div class="hover2">
+					
+						<i id="icon1" class="fa fa-male" aria-hidden="true"></i>
+					
+						<p>Guides</p>
+					
+						<nav class="guidenavigation">
+							
+							<ul>
+			
+								<li onclick="window.location.href ='../HTML/scotland.html'" class="guide1">Marwan</li>
+								<li onclick="window.location.href ='../HTML/usa.html'" class="guide2">Lucas</li>
+								<li onclick="window.location.href ='../HTML/japan.html'" class="guide3">Serguei</li>
+								<li onclick="window.location.href ='../HTML/italy.html'" class="guide4">Clement</li>
+								<li onclick="window.location.href ='../HTML/south-korea.html'" class="guide5">Christopher</li>
+								<li onclick="window.location.href ='../HTML/sweden.html'" class="guide6">Matthieu</li>
+			
+							</ul>
+			
+						</nav>
+			
+					</div>
+				
+				<button class="button" >accueil</button>
+			
+			</header>
+	<!--fin du header commun à toutes les pages-->
 
-			<section class="first-lane">
 
-					<h2 id="title1">Découverte de la Suède</h2>	
+	<!--En-tête de la page-->
+			<main>
 
-						<img src="../IMG/SWEDEN/information.png" id="info">
-						<p id="one"><a href="sweden.html#infoed">Quelques informations</p></a><br>
-						<p id="two">La vie en Suède<br>
-						La topographie</p>
+				<div class="intro-master">
+					<p class="diapo" alt="short video showing some swedish spots"></p> <!--classe pour diapositives-->
+					
+					<h1 class="welcome">
+					
+						Välkommen till Sverige !!
+					
+					</h1>
+				</div>
 
-						<img src="../IMG/SWEDEN/carte-balisee.png" id="map">
-						<p id="five"><a href="sweden.html#maped">Les lieux à visiter</p></a><br>
-						<p id="six">La capitale<br>
-						Le parc national de Sarek<br>
-						Les merveilles naturelles</p>
 
-						<img src="" id="">
-						<p id=""></p>
-						<p id=""><br>
+	<!--première partie de la présentation-->
+
+				<section class="first-lane">
+
+						<h2 id="title1">Découverte de la Suède</h2>	
+
+							<img src="../IMG/SWEDEN/information.png" id="info">
+							<p id="one"><a href="sweden.html#infoed">Quelques informations</a></p><br>
+							<p id="two">La vie en Suède<br>
+							La topographie</p>
+
+							<img src="../IMG/SWEDEN/carte-balisee.png" id="map">
+							<p id="five"><a href="sweden.html#maped">Les lieux à visiter</a></p><br>
+							<p id="six">La capitale<br>
+							Le parc national de Sarek<br>
+							Les merveilles naturelles</p>
+
+							<img src="" id="">
+							<p id=""></p>
+							<p id=""><br>
+							<br>
+							</p>
+
+				</section>
+
+	<!--deuxième partie de la présentation-->
+				
+				<section class="second-lane" id="infoed">
+					
+						<h2>Quelques informations:</h2>
 						<br>
-						</p>
+					
+						<p><span>La vie en suède:</span><br>
+						Il y a plus de 10 millions 450 mille habitant en Suède<br>
+						Ce qui représente 0.13% de la population global.<br>
+						Il y a 6 langues officielles, le Suédois qui est la langue principale,<br><br>
 
-			</section>
+						La fête nationnale est le 6 Juin<br></p>
+						<br>
 
-			<section class="second-lane" id="infoed">
-				<h2>Quelques informations:</h2>
-				<br>
-				<p>La vie en suède:<br>
-				Il y a plus de 10 millions 450 mille habitant en Suède<br>
-				Ce qui représente 0.13% de la population global.<br>
-				Il y a 6 langues officielles, le Suédois qui est la langue principale,<br>
-				<br>
-				La fête nationnale est le 6 Juin<br></p>
-				<br>
-				<p>La topographie:<br>
-				La Suède est le 5ième plus grand pays Européen,<br>
-				Avec une surface terrestre de 410 km² et une surface total d'environ 529 km²,<br>
-				<a href="https://sweden.se/life/society/key-facts-about-sweden" id="moar">"Plus de chiffres"</p></a>
-			</section>
-
-			<section class="second-lane" id="maped">
-				<h2>Les lieux importants:</h2>
-				<p>La capitale:<br>
-				Stockholm est la plus grande ville du pays,<br>
-				Elle est le siège du gouvernement et du parlement,<br>
-				Ainsi que le lie de résidence officielle du monarque suédois.<br>
-				À Stockholm, il y a une très grande partie des principaux lieux culturels de Suède,<br>
-				Comme des théâtres, des musées ou encore des opéras;<br>
-				Il y a aussi le <a href="https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Drottningholm" id="moar">château de Drottningholm</a><br>
-
-			</section>
-		</main>
-
-
-		<footer> <!-- footer commun entre chaque page du site -->
+						<p><span>La topographie:</span><br>
+						La Suède est le 5ième plus grand pays Européen,<br>
+						Avec une surface terrestre de 410 km² et une surface total d'environ 529 km².<br></p>
 			
+				</section>
 
-		</footer>
+				<section class="second-lane" id="maped">
 
-	</body>
+					<h2>Les lieux importants:</h2>
+				
+					<div class="grid-txt">
+
+						<div id="txtone">
+
+							<p><span>La capitale:</span><br>
+
+							Stockholm est la plus grande ville du pays,<br>
+							Elle est le siège du gouvernement et du parlement,<br>
+							Ainsi que le lie de résidence officielle du monarque suédois.<br>
+							À Stockholm, il y a une très grande partie des principaux lieux culturels de Suède,<br>
+							Comme des théâtres, des musées ou encore des opéras;<br>
+							Il y a aussi le château de Drottningholm<br></p>
+							<br>
+							
+						</div>
+
+						<div id="txttwo">
+
+							<p><span>Le parc national de Sarek:</span><br>
+							
+							Il se trouve au nord de la Suède, dans la commune de Jokkmokkdu comté de Norrbotten en Laponie.<br>
+							Avec sa superficie de 1970km² dans les alpes scandinaves, Sarek et le reste de la Laponie qui l'entoure,<br>
+							sont souvent qualifiés de "plus grande zone encore vierge" d'Europe.</p><br>
+
+						</div>
+						
+						<div class="txtthree">
+
+							<p><span>Les merveilles naturelles:</span><br>
+							
+							Il existe plusieurs merveilles naturelles en Suèdes, en voici quelques-unes ainsi que leurs localisation:<br>
+							Les aurores boréales, considéré comme le plus grand spectacle de lumière sur terre,<br>
+							Ce phénomène naturel envoûtant est généralement observé dans le nord de la Suède de fin Septembre jusqu'au début Avril<br>
+							<br>
+							Le Kebnekaise ou le sommet le plus haut de Suède, s'étend sur 2106 mètres dans le ciel et est un immanquable sur les listes de nombreux aventuriers.<br>
+							Le sommet est accessible par un sentier de randonnée depuis Nikkaluokta.<br>
+							La randonnée peut êetre assez difficile, mais vous serez récompensez par des vues panoramiques sur le paysage aride en Suède et en Norvège.<br></p>
+						
+						</div>
+
+						<div class="imgone"></div>
+						<div class="imgtwo"></div>
+						<div class="imgthree"></div>
+
+
+					</div>
+
+				</section>
+			</main>
+
+	<!--footer commun à toutes les pages-->
+
+			<footer class="footertxt">
+				<p>© BrasCassCorporation. Tous droits réservés. | Mentions légales | Cookies</p>
+		
+			</footer>
+
+		</body>
 
 </html>
