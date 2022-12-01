@@ -6,6 +6,433 @@ main {
 
 }
 .title {
-	border-bottom: 2px solid black;
-	width: 500px;
+	border-bottom: 2px solid #01b6ff;
+	width: 700px;
+	font-family: fantasy;
+	font-size: 50px;
+	font-weight: bold;
+	color: #01b6ff;
+	margin-left: 50px;
+}
+header {
+
+}
+figcaption + p {
+  font-family: fantasy;
+}
+.abstract {
+  background-image: url(../IMG/JAPAN/background-body.jpg);
+  width: 100vw;
+  height: 928px;
+  background-size: cover;
+}
+
+@keyframes AutoSlide {
+  0% {
+    left: 0px; /*1ère image*/
+  }
+  10% {
+    left: 0px; /*1ère image attente*/
+  }
+  20% {
+    left: -660px; /*2ème image*/
+  }
+  30% {
+    left: -660px; /*2ème image attente*/
+  }
+  40% {
+    left: -1400px; /*3ème image*/
+  }
+  50% {
+    left: -1400px; /*3ème image attente*/
+  }
+  60% {
+    left: -2050px;/*4ème image*/
+  }
+  70% {
+    left: -2050px; /*4ème image attente*/
+  }
+  80% {
+    left: -2705px; /*5ème image*/
+  }
+  90% {
+    left: -2705px;/*5ème image attente*/
+  }
+  100% {
+    left: 0px; /*Retour 1ère image*/
+  }
+}
+#slideshow {
+  position: relative;
+  width: 650px;
+  height: 650px;
+  margin-top: 70px;
+  margin-left: 35%;
+  overflow: hidden;
+}
+#sContent li {
+  
+}
+#sContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  margin: 0;            
+  padding: 0;
+  display: flex;
+  
+  /*CSS3 keyframes animation*/
+  animation-name: AutoSlide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.imgtokyo {
+  width: auto;
+}
+.imgosaka{
+  height: 600px;
+  width: auto;
+}
+.imgokinawa {
+  height: 600px;
+  width: auto;
+}
+
+.snip1361 {
+  position: relative;
+  overflow: hidden;
+  margin-left: -165px;
+  height: 600px;
+  width: auto;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  font-size: 16px;
+}
+.snip1361 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1361 img {
+  vertical-align: top;
+}
+.snip1361 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 45px 65px;
+}
+.snip1361 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.snip1361 h3,
+.snip1361 p {
+  margin: 0 0 10px;
+}
+.snip1361 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.snip1361 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.snip1361 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.snip1361:hover figcaption,
+.snip1361.hover figcaption {
+  top: 300px;
+}
+figcaption {
+  height: 400px;
+}
+
+.snip1361-2 {
+  position: relative;
+  overflow: hidden;
+  margin-left: -25px;
+  height: 600px;
+  width: auto;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  font-size: 16px;
+}
+.snip1361-2 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1361 img {
+  vertical-align: top;
+}
+.snip1361-2 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 45px 65px;
+}
+.snip1361-2 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.snip1361-2 h3,
+.snip1361-2 p {
+  margin: 0 0 10px;
+}
+.snip1361-2 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.snip1361-2 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.snip1361-2 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.snip1361-2:hover figcaption,
+.snip1361-2.hover figcaption {
+  top: 300px;
+}
+.snip1361-3 {
+  position: relative;
+  overflow: hidden;
+  margin-left: -290px;
+  height: 600px;
+  width: auto;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  font-size: 16px;
+}
+.snip1361-3 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1361-3 img {
+  vertical-align: top;
+}
+.snip1361-3 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 45px 65px;
+}
+.snip1361-3 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.snip1361-3 h3,
+.snip1361-3 p {
+  margin: 0 0 10px;
+}
+.snip1361-3 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.snip1361-3 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.snip1361-3 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.snip1361-3:hover figcaption,
+.snip1361-3.hover figcaption {
+  top: 300px;
+}
+
+
+.snip1361-4 {
+  position: relative;
+  overflow: hidden;
+  margin-left: -490px;
+  height: 600px;
+  width: auto;
+  width: 200%;
+  color: #141414;
+  text-align: left;
+  font-size: 16px;
+}
+.snip1361-4 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1361-4 img {
+  vertical-align: top;
+}
+.snip1361-4 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 45px 65px;
+}
+.snip1361-4 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.snip1361-4 h3,
+.snip1361-4 p {
+  margin: 0 0 10px;
+}
+.snip1361-4 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.snip1361-4 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.snip1361-4 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.snip1361-4:hover figcaption,
+.snip1361-4.hover figcaption {
+  top: 300px;
+}
+.snip1361-5 {
+  position: relative;
+  overflow: hidden;
+  margin-left: -290px;
+  height: 600px;
+  width: auto;
+  width: 200%;
+  color: #141414;
+  text-align: left;
+  font-size: 16px;
+}
+.snip1361-5 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1361-5 img {
+  vertical-align: top;
+}
+.snip1361-5 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 45px 65px;
+}
+.snip1361-5 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.snip1361-5 h3,
+.snip1361-5 p {
+  margin: 0 0 10px;
+}
+.snip1361-5 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.snip1361-5 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.snip1361-5 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.snip1361-5:hover figcaption,
+.snip1361-5.hover figcaption {
+  top: 300px;
 }
