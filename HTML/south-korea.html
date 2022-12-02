@@ -5,17 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="south-korea.css" type="text/css">
+    <link rel="stylesheet" href="voyages.css" type="text/css">
     <link rel="icon" href="images/flagkr.png">
+    <link href="FONTS/fontawesome/css/all.css" rel="stylesheet">
     <title>대한민국 Corée du Sud</title>
 </head>
 <body>
+    <!-- Header commun-->
     <header>
-        <nav>
-            <p>MENU 1</p>
-            <a href="../index.html"><p>PLANETE</p></a>
-            <p>MENU 2</p>
-        </nav>
+        <div class="hover1">
+            <i id="icon1" class="fa fa-plane" aria-hidden="true"></i>
+            <p class="texte">Destinations</p>
+            <nav class="continentnavigation">
+                <ul>
+                    <li onclick="window.location.href ='HTML/scotland.html'" class="contry1">Scotland</li>
+                    <li onclick="window.location.href ='HTML/italy.html'" class="country2">Italy</li>
+                    <li onclick="window.location.href ='HTML/japan.html'" class="country3">Japan</li>
+                    <li onclick="window.location.href ='HTML/sweden.html'" class="country4">Sweden</li>
+                    <li onclick="window.location.href ='HTML/south-korea.html'" class="country5">South Korea</li>
+                    <li onclick="window.location.href ='HTML/usa.html'" class="country6">United States of America</li>
+                </ul>
+            </nav>
+        </div>
+        <img class="logo" src="images/Logo.png">
+        <div class="hover2">
+            <i id="icon1" class="fa fa-male" aria-hidden="true"></i>
+            <p>Guides</p>
+            <nav class="guidenavigation">
+                <ul>
+                    <li onclick="window.location.href ='HTML/scotland.html'" class="guide1">Marwan</li>
+                    <li onclick="window.location.href ='HTML/usa.html'" class="guide2">Lucas</li>
+                    <li onclick="window.location.href ='HTML/japan.html'" class="guide3">Serguei</li>
+                    <li onclick="window.location.href ='HTML/italy.html'" class="guide4">Clement</li>
+                    <li onclick="window.location.href ='HTML/south-korea.html'" class="guide5">Christopher</li>
+                    <li onclick="window.location.href ='HTML/sweden.html'" class="guide6">Matthieu</li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
         <div class="title">
             <p></p>
@@ -28,7 +56,7 @@
         </article>
 
         <!-- Article 2 -->
-        <article class="technos">
+        <article class="tech">
             <img src="images/imgtech.jpg" alt="">
             <p class="subtitles2"></p>
         </article>
@@ -63,30 +91,72 @@
             <img src="images/imgtouristic.jpg" alt="">
         </article>
 
-        -----------
-
-        <!-- Article 1 -->
-        <article class="intro">
-            <p><b><span class="subtitles">Introduction</span></b></p>
-            <br>
-            <p>La Corée du Sud, un pays d'Asie de l'Est, occupe la moitié sud de la péninsule de Corée. Elle partage l'une des frontières les plus fortement militarisées du monde avec la Corée du Nord. Elle est également connue pour sa campagne vallonnée et verdoyante parsemée de cerisiers et de temples bouddhistes datant de plusieurs siècles, ainsi que pour les villages de pêcheurs de sa côte, ses îles subtropicales et ses villes high-tech comme Séoul, sa capitale. La Corée du Sud est issue le 15 août 1948 de la partition de la péninsule coréenne, qui avait été occupée par l'empire du Japon de 1905 à 1945. L'histoire de la Corée du Sud est donc la "moitié" des phases moderne et contemporaine de l'histoire de la Corée, depuis 1948.</p>
+        <!-- Grid -->
+        <article class="grid">
+            <div class="intro-grid">
+                <p class="subtitles"></p>
+                <p>La Corée du Sud, un pays d'Asie de l'Est, occupe la moitié sud de la péninsule de Corée. Elle partage l'une des frontières les plus fortement militarisées du monde avec la Corée du Nord. Elle est également connue pour sa campagne vallonnée et verdoyante parsemée de cerisiers et de temples bouddhistes datant de plusieurs siècles, ainsi que pour les villages de pêcheurs de sa côte, ses îles subtropicales et ses villes high-tech comme Séoul, sa capitale. La Corée du Sud est issue le 15 août 1948 de la partition de la péninsule coréenne, qui avait été occupée par l'empire du Japon de 1905 à 1945. L'histoire de la Corée du Sud est donc la "moitié" des phases moderne et contemporaine de l'histoire de la Corée, depuis 1948.</p>
+            </div>
+            <div class="tech-grid">
+                <p class="subtitles2"></p>
+                <p>La Corée du Sud est un des pays les plus avancés en matière de technologie et nombreux sont les services numériques disponibles dans ce pays. Avec des infrastructures numériques considérées comment les plus réputées au monde en terme de débit, le pays est un paradis de technologie. Près de 95 % de la population du pays a accès au haut-débit et la quasi-totalité de Séoul est couverte par le wi-fi. Les Sud-Coréens travaillant beaucoup, ces nouvelles structures leur permettent d’économiser du temps car les e-magasins sont installés dans les stations de métro (Seolleung par exemple) et dans les arrêts de bus. Le magasin Homeplus propose ainsi des écrans avec plus de 35 000 références (produits d’entretien, produits frais, fruits et légumes, boissons, produits laitiers…), installées en rangés sur des étagères. Il vous suffit de télécharger l’application Homeplus, de scanner le code QR des produits qui vous intéressent et de les mettre dans votre panier virtuel, de payer sur votre téléphone et les produits seront livrés devant votre porte à l’heure de votre choix. La livraison est effectuée par le magasin physique le plus proche de votre logement.</p>
+            </div>
+            <div class="societe-grid">
+                <p class="subtitles3"></p>
+                La société coréenne est une société qui, sans cesse, met l'accent sur la réalisation de soi par la réussite scolaire et professionnelle. La valeur des perdants n'est pas admise dans cette société fondée sur la logique et la dynamique de la compétition incessante entre les membres de la société.
+            </div>
+            <div class="specialites-grid">
+                <p class="subtitles4"></p>
+                <p>Le bibimbap, ce plat associe du riz avec des légumes sautés ainsi que de la viande de bœuf, au milieu du tout, ajoutez un œuf et du kimchi. Le Naengmyeon, Le Gimbap, Le Modeumjeon, Le Japchae, Le Kimchi, Le Mandu...</p>
+            </div>
+            <div class="games-grid">
+                <p class="subtitles5"></p>
+                <p>Le jeu vidéo en Corée du Sud est un marché de pointe. C'est en effet le loisir le plus populaire chez les adultes sud-coréen et est au cœur même de la société sud-coréenne. Il est considéré comme un sport national et quatre chaines de télévisions y sont spécialement dédiées. Les résultats des compétitions d’e-sport sont rapportés par les journaux télévisés des grandes chaines au même titre que ceux du football ou du basketball. Les jeux les plus populaires sont League of Legends, Valorant, PUBG, Starcraft...</p>
+            </div>
+            <div class="esport-grid">
+                <p class="subtitles6"></p>
+                <p>Depuis 1998, l’e-sport et la diffusion de compétitions de jeu vidéo à la télévision connait une popularité croissante qui a accéléré le développement des jeux en ligne, notamment auprès des jeux sud-coréen. La première ligue d’e-sport voit le jour en 1998 lorsque StarCraft devient populaire dans le pays. Avec le développement des PC bangs (cybercafés), l’e-sport devient ensuite une des principales activités des adolescents.</p>
+            </div>
         </article>
 
-        <article>
-            <p><b><span class="subtitles">Les spécialités coréennes</span></b></p>
-            <p>Le bibimbap, ce plat associe du riz avec des légumes sautés ainsi que de la viande de bœuf, au milieu du tout, ajoutez un œuf et du kimchi. Le Naengmyeon, Le Gimbap, Le Modeumjeon, Le Japchae, Le Kimchi, Le Mandu...</p>
-        </article>
+        <!-- Grid 2 -->
+        <article class="grid2">
+            <div class="why-grid">
+                <p class="subtitles8"></p>
+                <p>La Corée du Sud a beaucoup à offrir: une culture asiatique riche et unique, des temples bouddhistes incroyables, des sites du patrimoine mondial de l'UNESCO, une cuisine délicieuse et saine et une ville de classe mondiale: Séoul, avec tout, des hôtels de luxe, des magasins de haute technologie et des lieux à sortir la nuit. Visitez les temples et les palais, l'architecture est magnifiquement préservée.</p>
+            </div>
+            
+            <div class="busan">
+                <img src="images/busan.PNG" alt="">
+            </div>
 
-        <!-- Article 5 -->
-        <article class="games">
-            <p class="subtitles5">Les jeux vidéos</p>
-            <p>Le jeu vidéo en Corée du Sud est un marché de pointe. Le jeu vidéo est en effet le loisir le plus populaire chez les adultes sud-coréen et est au cœur même de la société sud-coréenne. Il est considéré comme un sport national et quatre chaines de télévisions y sont spécialement dédiées. Les résultats des compétitions d’e-sport sont rapportés par les journaux télévisés des grandes chaines au même titre que ceux du football ou du basketball. Les jeux les plus populaires sont League of Legends, Valorant, PUBG, Starcraft...</p>
-        </article>
+            <div class="tourist-grid">
+                <p class="subtitles7"></p>
+                <p>
+                    <ul>
+                        <li>La DMZ (zone démilitarisée qui sépare la Corée Nord/Sud sur 235 km)</li>
+                        <li>Gyeongju (ville, capitale durant le royaume de Silla)</li>
+                        <li>Andong et Hahoe (village traditionnel)</li>
+                        <li>Busan (grande ville portuaire)</li>
+                        <li>Suncheon (ville, située au fond d'une baie)</li>
+                        <li>Boseong (réputée pour la culture de thé vert de grande qualité)</li>
+                        <li>Jeonju (quartier préservé)</li>
+                        <li>Parc de Seoraksan (Grand parc national montagneux avec cascades, sentiers de randonnée et faune/flore variées)</li>
+                        <li>Seonyudo ou Sunyudo (île du fleuve Han à Séoul)</li>
+                        <li>Jeju (ville située sur l'île de Jeju-do)</li>
+                        <li>Séoul (Capitale de la Corée du Sud, Séoul est une immense métropole où les gratte-ciel modernes, les métros high-tech et la culture pop côtoient les temples bouddhistes, les palais et les marchés de rue.)</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="city">
+                <img src="images/city.PNG" alt="">
+            </div>
 
-        <article class="esport">
-            <p><b><span class="subtitles6">L'esport</span></b></p>
-            <br>
-            <p>Depuis 1998, l’e-sport et la diffusion de compétitions de jeu vidéo à la télévision connait une popularité croissante qui a accéléré le développement des jeux en ligne, notamment auprès des jeux sud-coréen. La première ligue d’e-sport voit le jour en 1998 lorsque StarCraft devient populaire dans le pays. Avec le développement des PC bangs (cybercafés), l’e-sport devient ensuite une des principales activités des adolescents.</p>
+            <!-- Footer commun-->
+            <footer class="footertxt">
+                <p>© BrasCassCorporation. Tous droits réservés. | Mentions légales | Cookies</p>
+            </footer>
         </article>
     </main>
 </body>
