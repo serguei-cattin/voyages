@@ -1,1 +1,267 @@
+@font-face{
+    font-family: 'Oswald';
+    src: url(font/Oswald-VariableFont_wght.ttf);
+}
+body {
+    overflow-x: hidden;
+}
+/*-----New York City-----*/
+.nyc {
+    display: flex;
+    background-color: #ffff;
+    flex-direction: column;
+    justify-content: center;
+}
+/*--New York City tête--*/
+.head-NYC {
+    background-image: url(images/NYC/fond.jpg);
+    background-size: 1475px 500px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titrenyc {
+    max-width: 700px;
+    max-height: 1000px;
+    margin-bottom: 150px;
+}
+/*--New York City corps--*/
+.intro-nyc {
+    background-image: url(images/NYC/fond-intro.png);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+.accroche-NYC{
+    color: #3C3B6E;
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 40px;
+    font-family: 'Oswald';
+    font-size: xx-large;
+}
+.presentation-NYC {
+    color: #3C3B6E;
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 40px;
+    font-family: 'Oswald';
+    font-size: x-large;
+    text-align: justify;
+}
+.accroche, .presentation-NYC {
+    z-index: 1;
+}
+.corps-NYC {
+    background-color: #3C3B6E;
+}
+.corps1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.corps2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.sous-titre-NYC {
+    color: #B31942;
+    font-family: 'Oswald';
+    font-size: 100px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: -30px;
+}
+.texte-NYC {
+    color: #ffff;
+    font-family: 'Oswald';
+    font-size: large;
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 120px;
+}
+.broadway {
+    width: 100%;
+    max-height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+.pont {
+    width: 100%;
+    height: 100%;
+}
+.avenue {
+    width: 100%;
+    height: 100%;
+}
+.wall {
+    width: 100%;
+    height: 100%;
+}
+/*-----Parc de Yellowstone-----*/
+.yellowstone {
+    background-color: #386410;
+}
+/*--Parc de Yellowstone tête--*/
+.head-yellowstone {
+    background-image: url(images/Yellowstone/source.jpg);
+    background-size: cover;
+}
+.logo-yellowstone {
+    margin-left: 525px;
+}
+.titre-yellowstone {
+    max-width: 700px;
+    max-height: 1000px;
+    padding-top: 100px;
+    margin-left: 385px;
+}
+/*--Parc de Yellowstone corps--*/
+.intro-yellowstone {
+    margin-top: -27px;
+    background-image: url(images/Yellowstone/fond-yellowstone.png);
+    background-size: cover;
+    font-family: 'Oswald';
+    text-align: center;
+    margin-bottom: 50px;
+}
+.accroche-yellowstone {
+    color: #55361F;
+    font-size: xx-large;
+    padding-top: 50px;
+}
+.presentation-yellowstone {
+    color: #55361F;
+    padding-bottom: 50px;
+    font-family: 'Oswald';
+    font-size: x-large;
+    text-align: center;
+}
+.animaux {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.texte-animaux {
+    font-family: 'Oswald';
+    font-size: large;
+    text-align: center;
+    align-self: center;
+    grid-row: 1;
+    grid-column: 1;
+}
+.diapo-yellowstone {
+    grid-row: 1;
+    grid-column: 2;
+    z-index: 0;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    -webkit-animation-name: diapo-yellowstone;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running ;
+    -moz-animation-name: diapo-yellowstone;
+    -moz-animation-duration: 20s;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
 
+
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background: contain;
+    animation-name: diapo-yellowstone;
+    animation-duration: 20s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes diapo-yellowstone {
+    00%{background-image: url(images/Yellowstone/diapo/bison.png);}
+    20%{background-image: url(images/Yellowstone/diapo/huard.png);}
+    40%{background-image: url(images/Yellowstone/diapo/puma.png);}
+    60%{background-image: url(images/Yellowstone/diapo/pelegrin.png);}
+    80%{background-image: url(images/Yellowstone/diapo/grizzly.png);}
+    100%{background-image: url(images/Yellowstone/diapo/pelican.png);}
+}
+.plantes {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 1fr;
+}
+.texte-plantes {
+    font-family: 'Oswald';
+    font-size:  large;
+    text-align: center;
+    align-self: center;
+    grid-column: 2;
+}
+.fleur {
+    width: 500px;
+    height: 500px;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0 auto;
+}
+/*-----Las Vegas-----*/
+.las-vegas {
+    background-color: #33025E;
+}
+/*--Las Vegas tête--*/
+.head-las-vegas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr;
+    background-image: url(images/Las-Vegas/fond-vegas.png);
+    background-size: 1457px 720px;
+    background-repeat: no-repeat;
+}
+.logo-las-vegas {
+    grid-column: 2;
+    grid-row: 2;
+    width: 500px;
+}
+.titre-las-vegas{
+    grid-row: 1;
+    grid-column: 2;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+/*--Las Vegas corps--*/
+.intro-las-vegas {
+    background-image: url(images/Las-Vegas/roulette.png);
+    background-size: cover;
+    font-family: 'Oswald';
+}
+.accroche-las-vegas {
+    color: #33025E;
+    margin-top: 0px;
+    font-size: xx-large;
+    padding-top: 50px;
+}
+.presentation-las-vegas {
+    color: #33025E;
+    font-size: x-large;
+    padding-bottom: 50px;
+}
+.activités {
+    color: #ffff;
+    font-family: 'Oswald';
+    font-size: large;
+}
+.titre-liste {
+    font-size: large;
+    font-weight: bold;
+}
