@@ -14,7 +14,7 @@ body {
 }
 /*--New York City tête--*/
 .head-NYC {
-    background-image: url(images/NYC/fond.jpg);
+    /* background-image: url(../IMG/USA/NYC/fond.jpg); */
     background-size: 1475px 500px;
     padding-top: 150px;
     display: flex;
@@ -29,7 +29,7 @@ body {
 }
 /*--New York City corps--*/
 .intro-nyc {
-    background-image: url(images/NYC/fond-intro.png);
+    background-image: url(../IMG/USA/NYC/fond-intro.png);
     background-size: cover;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -106,7 +106,7 @@ body {
 }
 /*--Parc de Yellowstone tête--*/
 .head-yellowstone {
-    background-image: url(images/Yellowstone/source.jpg);
+    background-image: url(../IMG/USA/Yellowstone/source.jpg);
     background-size: cover;
 }
 .logo-yellowstone {
@@ -121,7 +121,7 @@ body {
 /*--Parc de Yellowstone corps--*/
 .intro-yellowstone {
     margin-top: -27px;
-    background-image: url(images/Yellowstone/fond-yellowstone.png);
+    background-image: url(../IMG/USA/Yellowstone/fond-yellowstone.png);
     background-size: cover;
     font-family: 'Oswald';
     text-align: center;
@@ -187,12 +187,12 @@ body {
 }
 
 @keyframes diapo-yellowstone {
-    00%{background-image: url(images/Yellowstone/diapo/bison.png);}
-    20%{background-image: url(images/Yellowstone/diapo/huard.png);}
-    40%{background-image: url(images/Yellowstone/diapo/puma.png);}
-    60%{background-image: url(images/Yellowstone/diapo/pelegrin.png);}
-    80%{background-image: url(images/Yellowstone/diapo/grizzly.png);}
-    100%{background-image: url(images/Yellowstone/diapo/pelican.png);}
+    00%{background-image: url(../IMG/USA/Yellowstone/diapo/bison.png);}
+    20%{background-image: url(../IMG/USA/Yellowstone/diapo/huard.png);}
+    40%{background-image: url(../IMG/USA/Yellowstone/diapo/puma.png);}
+    60%{background-image: url(../IMG/USA/Yellowstone/diapo/pelegrin.png);}
+    80%{background-image: url(../IMG/USA/Yellowstone/diapo/grizzly.png);}
+    100%{background-image: url(../IMG/USA/Yellowstone/diapo/pelican.png);}
 }
 .plantes {
     margin-top: 100px;
@@ -223,7 +223,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.4fr 0.4fr;
-    background-image: url(images/Las-Vegas/fond-vegas.png);
+    background-image: url(../IMG/USA/Las-Vegas/fond-vegas.png);
     background-size: 1457px 720px;
     background-repeat: no-repeat;
 }
@@ -241,7 +241,7 @@ body {
 }
 /*--Las Vegas corps--*/
 .intro-las-vegas {
-    background-image: url(images/Las-Vegas/roulette.png);
+    background-image: url(../IMG/USA/Las-Vegas/roulette.png);
     background-size: cover;
     font-family: 'Oswald';
 }
