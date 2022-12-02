@@ -3,40 +3,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/voyages.css" type="text/css">
-    <link rel="stylesheet" href="/CSS/scotland.css" type="text/css">
-    <link rel="icon" href="/IMG/Scotland.png">
+    <link rel="stylesheet" href="../CSS/voyages.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/scotland.css" type="text/css">
+    <link rel="icon" href="/IMG/SCOTLAND/Scotland.png">
+    <link href="../FONTS/fontawesome/css/all.css" rel="stylesheet">
     <title>Scotland</title>
 </head>
 <body>
+  <header>
+		
+		<div class="hover1">
+			
+			<i id="icon1" class="fa fa-plane" aria-hidden="true"></i>
+			<p class="texte">Destinations</p>
+			<nav class="continentnavigation">
+				<ul>
+					<li onclick="window.location.href ='../HTML/scotland.html'" class="contry1">Scotland</li>
+					<li onclick="window.location.href ='../HTML/italy.html'" class="country2">Italy</li>
+					<li onclick="window.location.href ='../HTML/japan.html'" class="country3">Japan</li>
+					<li onclick="window.location.href ='../HTML/sweden.html'" class="country4">Sweden</li>
+					<li onclick="window.location.href ='../HTML/south-korea.html'" class="country5">South Korea</li>
+					<li onclick="window.location.href ='../HTML/usa.html'" class="country6">United States of America</li>
+				</ul>
+			</nav>
+		</div>
+		<img class="logo" src="../IMG/HEADER/Logo.png">
+		<div class="hover2">
+			<i id="icon1" class="fa fa-male" aria-hidden="true"></i>
+			<p>Guides</p>
+			<nav class="guidenavigation">
+				
+				<ul>
+					<li onclick="window.location.href ='../HTML/scotland.html'" class="guide1">Marwan</li>
+					<li onclick="window.location.href ='../HTML/usa.html'" class="guide2">Lucas</li>
+					<li onclick="window.location.href ='../HTML/japan.html'" class="guide3">Serguei</li>
+					<li onclick="window.location.href ='../HTML/italy.html'" class="guide4">Clement</li>
+					<li onclick="window.location.href ='../HTML/south-korea.html'" class="guide5">Christopher</li>
+					<li onclick="window.location.href ='../HTML/sweden.html'" class="guide6">Matthieu</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
     <section id="pres">
-        <img src="/IMG/Scottish-Flag-Waving.gif" alt="drapeau écossais">
+        <img src="../IMG/SCOTLAND/Scottish-Flag-Waving.gif" alt="drapeau écossais">
         <h1>Écosse / Scotland</h1>
     </section>
     <div id="descr">
         <p>
-            <img src="/IMG/icon-europe.png" alt="icon-europe"><br> <b>Continent:
+            <img src="../IMG/SCOTLAND/icon-europe.png" alt="icon-europe"><br> <b>Continent:
             <br> Europe</b>
         </p>
         <p>
-            <img src="/IMG/icon-capitale.png" alt="icon-capitale"><br> <b>Capitale:
+            <img src="../IMG/SCOTLAND/icon-capitale.png" alt="icon-capitale"><br> <b>Capitale:
             <br> Édimbourg</b>
         </p>
         <p>
-            <img src="/IMG/icon-population.png" alt="icon-population"><br> <b>Population:
+            <img src="../IMG/SCOTLAND/icon-population.png" alt="icon-population"><br> <b>Population:
             <br> ~ 5.4 millions</b>
         </p>
         <p>
-            <img src="/IMG/icon-confettis.png" alt="icon-confettis"><br> <b>Fête nationnale: 
+            <img src="../IMG/SCOTLAND/icon-confettis.png" alt="icon-confettis"><br> <b>Fête nationnale: 
             <br> 30 novembre</b>
         </p>
         <p>
-          <img src="/IMG/icon-langage.png" alt="icon-langage"><br> <b>Langues officielles:
+          <img src="../IMG/SCOTLAND/icon-langage.png" alt="icon-langage"><br> <b>Langues officielles:
             <br> Anglais, Gaélique écossais</b>
         </p>
     </div>
-    <section id="title">
-          <h2>Édimbourg</h2>
+    <section class="sub">
+      <div class="div">
+        <a class="a" href="#Édimbourg">Édimbourg</a>
+      </div>
+      <div class="div">
+        <a class="a" href="#Highlands" >Highlands</a>
+      </div>
+      <div class="div">
+        <a class="a" href="#Spécialités">Spécialités</a>
+      </div>
+    </section>
+    <section class="title" id="Édimbourg">
+           <h2>Édimbourg</h2>
           <p>
             Capitale de l'Écosse, la ville brasse des habitants d’origines diverses,
             <br> elle abrite une jeunesse pleine de vie.
@@ -56,7 +102,7 @@
               Ancien volcan de 251 mètres de haut, Arthur’s Seat est idéal pour les sorties en famille : de belles balades en perspective !
               <br> Avec sa lande, sa bruyère, ses lapins et ses roches abruptes, ce petit coin des Highlands offre un magnifique panorama sur la région.
             </p>
-            <img src="/IMG/Arthur-s-seat.jpg" alt="">
+            <img src="../IMG/SCOTLAND/Arthur-s-seat.jpg" alt="">
           </article>
           <article class="container">
             <p class="diapo2"></p>
@@ -67,7 +113,7 @@
             </p>
           </article>
     </section>
-    <section id="title">
+    <section class="title" id="Highlands">
       <h2>Highlands
        <br>Les incontournables</h2>
        <p>
@@ -79,7 +125,7 @@
           <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-              <img src="/IMG/Loch-ness.jpg" alt="Loch-ness"><br> Loch-ness
+              <img src="../IMG/SCOTLAND/Loch-ness.jpg" alt="Loch-ness"><br> Loch-ness
             </div>
             <div class="flip-card-back">
               <p>
@@ -92,7 +138,7 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-              <img src="/IMG/Glencoe.jpg" alt="Glencoe"><br> Glencoe
+              <img src="../IMG/SCOTLAND/Glencoe.jpg" alt="Glencoe"><br> Glencoe
             </div>
             <div class="flip-card-back">
               <p>
@@ -104,7 +150,7 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-              <img src="/IMG/Blair-castle.jpg" alt="Blair-castle"><br> Blair Caslte
+              <img src="../IMG/SCOTLAND/Blair-castle.jpg" alt="Blair-castle"><br> Blair Caslte
             </div>
             <div class="flip-card-back">
               <p>
@@ -118,7 +164,7 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-            <img src="/IMG/Durness.jpg" alt="Durness"><br> Durness 
+            <img src="../IMG/SCOTLAND/Durness.jpg" alt="Durness"><br> Durness 
           </div>
           <div class="flip-card-back">
             <p>
@@ -130,7 +176,7 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-          <img src="/IMG/Stalker-castle.jpg" alt="Stalker-castle"><br> Stalker Castle 
+          <img src="../IMG/SCOTLAND/Stalker-castle.jpg" alt="Stalker-castle"><br> Stalker Castle 
         </div>
         <div class="flip-card-back">
           <p>
@@ -142,7 +188,7 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-        <img src="/IMG/Dunrobin-castle.jpg" alt="Dunrobin-castle"><br> Dunrobin Caslte 
+        <img src="../IMG/SCOTLAND/Dunrobin-castle.jpg" alt="Dunrobin-castle"><br> Dunrobin Caslte 
       </div>
       <div class="flip-card-back">
         <p>
@@ -154,7 +200,47 @@
         
         </article>
     </section>
-   
+    <section class="title" id="Spécialités">
+      <div class="image-container">
+        <div class="text">Spécialités culinaire</div>
+      </div>
+    </section>
+    <section class="carte">
+    <div class="menu">
+      <h3>Menu</h3>
+    </div>
+    <ul>
+      <li>
+        <p class="menu-name">Haggis</p>
+       <p><span>Aussi appelé « Panse de brebis farcie », le Haggis est le plat national écossais. Il est fabriqué à base d’abats hachés d'un mouton, d'un porc ou d'une vache mélangés avec du suif, des oignons, de la farine d'avoine et des épices… Traditionnellement, le tout était bouilli dans l'estomac de l'animal abattu (d’où son nom). La première bouchée surprend mais après on ne peut plus s’en passer. Les Ecossais en mangent au petit déjeuner.</span></p>
+      </li>
+      <img src="../IMG/SCOTLAND/Haggis.jpg" alt="Haggis">
+
+      <li>
+        <p class="menu-name">Boeuf Angus</p>
+        <p><span>Mondialement connu, la viande de bœuf Angus provient de la région d’Aberdeen et d’Angus sur la coté est du pays. Braisée, à la poêle ou en carpaccio… cette viande extrêmement tendre se décline à l’infini. Il y en a pour tous les goûts !</span></p>
+      </li>
+      <img src="../IMG/SCOTLAND/Boeuf-angus.jpg" alt="Boeuf-angus">
+
+      <li>
+        <p class="menu-name">Stovie</p>
+        <p><span>Le stovie est un ragoût à base de viande bouillie (mouton, porc, bœuf) accompagné d’oignons et de pommes de terre (également bouillis). On peut y ajouter quelques légumes comme des carottes en dés ou du chou-fleur. Idéal pour tenir l’hiver !</span></p>
+      </li>
+      <img src="/IMG/SCOTLAND/Stovie.jpg" alt="Stovie">
+      <li>
+        <p class="menu-name">Cullen Skink</p>
+        <p><span>Le cullen skink est une soupe de poisson, en l’occurrence d’aiglefin fumé (plus connu sous le nom de « haddock »), de pommes de terre et d’oignons originaire du village de Cullen dans la région du Moray, dans le nord-est du pays. Ne faites pas la fine bouche avant de l’avoir goûté, il en vaut vraiment la peine !</span></p>
+      </li>
+      <img src="/IMG/SCOTLAND/Cullen-Skink.jpg" alt="">
+      <li>
+        <p class="menu-name">Black Pudding</p>
+        <p><span>Il s’agit d’un type de boudin noir régional, généralement produit à base de sang de porc ou de bœuf mélangé à des flocons d’avoine, des gruaux d’avoine ou des flocons d’orge. Il fait généralement partie des petits-déjeuners écossais (voir plus haut), mais peut également accompagner du rôti d’agneau, des coquilles Saint-Jacques, ou n’importe quel plat de votre choix, en réalité !</span></p>
+      </li>
+      <img src="/IMG/SCOTLAND/Black-Pudding.jpg" alt="">
+    </ul>
+    </section>
+    <footer class="footertxt">
+      <p>© BrasCassCorporation. Tous droits réservés. | Mentions légales | Cookies</p>
+    </footer>
 </body>
 </html>
-
