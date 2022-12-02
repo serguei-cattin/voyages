@@ -7,20 +7,8 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-header {
-    height: 100px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    text-align: center;
-    padding-top: 32px;
-}
-
-nav p {
-    vertical-align: middle;
+body {
+    overflow-x: hidden;
 }
 
 main a:hover, a:visited, a:link, a:active {
@@ -29,6 +17,7 @@ main a:hover, a:visited, a:link, a:active {
 
 /* Trad Coréen --> Français */
 .title {
+    /* Utilisation de Flex car si j'utilise text-align: center; la traduction serait visible depuis toute la largeur de la page */
     display: flex;
     justify-content: center;
     animation: grow 1.5s;
@@ -47,65 +36,74 @@ main a:hover, a:visited, a:link, a:active {
 /* Introduction */
 .subtitles:after {
     content: "소개하다";
-    font-size: 50px;
+    font-size: 40px;
 }
 .subtitles:hover:after {
     content: "Introduction";
-    font-size: 57px;
+    font-size: 50px;
 }
 /* Technologies */
 .subtitles2:after {
     content: "기술";
-    font-size: 50px;
+    font-size: 40px;
 }
 .subtitles2:hover:after {
     content: "Technologies";
-    font-size: 57px;
+    font-size: 50px;
 }
 /* La société */
 .subtitles3:after {
     content: "한국사회";
-    font-size: 50px;
+    font-size: 40px;
 }
 .subtitles3:hover:after {
     content: "La société coréenne";
-    font-size: 40px;
+    font-size: 50px;
 }
 /* Specialités */
 .subtitles4:after {
     content: "한국 특산품";
-    font-size: 50px;
+    font-size: 40px;
 }
 .subtitles4:hover:after {
     content: "Les spécialités coréennes";
-    font-size: 40px;
+    font-size: 50px;
 }
 /* Jeux-vidéos */
 .subtitles5:after {
     content: "비디오 게임";
-    font-size: 50px;
+    font-size: 40px;
 }
 .subtitles5:hover:after {
-    content: "Les jeux vidéos";
-    font-size: 40px;
+    content: "Le jeu vidéo";
+    font-size: 50px;
 }
 /* L'esport */
 .subtitles6:after {
     content: "e스포츠";
-    font-size: 50px;
+    font-size: 40px;
 }
 .subtitles6:hover:after {
     content: "Esport";
-    font-size: 40px;
+    font-size: 50px;
 }
 /* Lieux touristiques */
 .subtitles7:after {
     content: "관광지";
-    font-size: 50px;
+    font-size: 40px;
 }
 .subtitles7:hover:after {
     content: "Lieux touristiques";
+    font-size: 50px;
+}
+/* Pourquoi choisir la Corée du sud ? */
+.subtitles8:after {
+    content: "한국을 선택한 이유";
     font-size: 40px;
+}
+.subtitles8:hover:after {
+    content: "Pourquoi choisir la Corée du sud ?";
+    font-size: 50px;
 }
 
 /* Animations */
@@ -128,52 +126,67 @@ main a:hover, a:visited, a:link, a:active {
 
 /* Animations, taille d'écritures, ombres et couleurs des grands titres */
 .subtitles {
-    font-size: 40px;
+    font-size: 50px;
     animation: grow 2.5s;
     display: flex;
-    color: rgb(255, 255, 255);
+    justify-content: center;
+    color: #548cb6;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 .subtitles2 {
-    font-size: 40px;
+    font-size: 50px;
     animation: grow 2.5s;
+    justify-content: center;
     display: flex;
-    color: rgb(255, 255, 255);
+    color: #3c3f42;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 .subtitles3 {
-    font-size: 40px;
+    font-size: 50px;
     animation: grow 2.5s;
     display: flex;
-    color: rgb(255, 255, 255);
+    justify-content: center;
+    color: rgb(255, 146, 50);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 .subtitles4 {
-    font-size: 40px;
+    font-size: 50px;
     animation: grow 2.5s;
     display: flex;
-    color: rgb(255, 255, 255);
+    justify-content: center;
+    color: #ffd900;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 .subtitles5 {
-    font-size: 40px;
+    font-size: 50px;
     animation: grow 2.5s;
     display: flex;
-    color: rgb(255, 255, 255);
+    justify-content: center;
+    color: #FF0044;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 .subtitles6 {
-    font-size: 40px;
+    font-size: 50px;
     animation: grow 2.5s;
+    justify-content: center;
     display: flex;
-    color: rgb(255, 255, 255);
+    color: rgb(153, 255, 0);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 .subtitles7 {
-    font-size: 40px;
+    font-size: 50px;
     animation: grow 2.5s;
     display: flex;
-    color: rgb(255, 255, 255);
+    justify-content: center;
+    color: rgb(134, 82, 10);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.subtitles8 {
+    font-size: 50px;
+    animation: grow 2.5s;
+    display: flex;
+    justify-content: center;
+    color: rgb(134, 10, 112);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
@@ -196,7 +209,7 @@ main a:hover, a:visited, a:link, a:active {
     border-radius: 5%;
 }
 
-.technos {
+.tech {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
@@ -206,9 +219,9 @@ main a:hover, a:visited, a:link, a:active {
     align-items: center;
     margin-top: 25px;
     background-color: #000000;
-    background-image: linear-gradient(90deg, #0e0e0e 0%, #b0b468 100%);
+    background-image: linear-gradient(90deg, #0e0e0e 0%, #548cb6 100%);
 }
-.technos img {
+.tech img {
     height: 600px;
     width: 1000px;
     margin: 10px 0px 10px 30px;
@@ -304,4 +317,44 @@ main a:hover, a:visited, a:link, a:active {
     width: 1000px;
     margin: 10px 30px 10px 0px;
     border-radius: 5%;
+}
+
+/* 2e Partie */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    text-align: center;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    background-color: #161515;
+    max-height: 900px;
+}
+.grid p {
+    margin: 20px 50px 0px 50px;
+}
+.specialites-grid {
+    margin-top: -140px;
+}
+.esport-grid {
+    margin-top: -300px;
+}
+
+/* 3e Partie */
+.grid2 {
+    text-align: center;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    background-color: #161515;
+}
+.grid2 p {
+    margin: 20px 50px 0px 50px;
+}
+.tourist-grid li {
+    list-style-type: none;
+}
+.busan {
+    margin-top: 20px;
 }
