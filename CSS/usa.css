@@ -110,13 +110,13 @@ body {
     background-size: cover;
 }
 .logo-yellowstone {
-    margin-left: 525px;
+    padding-left: 785px;
 }
 .titre-yellowstone {
     max-width: 700px;
     max-height: 1000px;
     padding-top: 100px;
-    margin-left: 385px;
+    padding-left: 585px;
 }
 /*--Parc de Yellowstone corps--*/
 .intro-yellowstone {
@@ -225,7 +225,7 @@ body {
     grid-template-rows: 0.4fr 0.4fr;
     background-image: url(../IMG/USA/Las-Vegas/fond-vegas.png);
     background-size: 1457px 720px;
-    background-repeat: no-repeat;
+    background-size: cover;
 }
 .logo-las-vegas {
     grid-column: 2;

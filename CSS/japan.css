@@ -84,7 +84,7 @@ figcaption + p {
   
   /*CSS3 keyframes animation*/
   animation-name: AutoSlide;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -106,7 +106,7 @@ figcaption + p {
   margin-left: -165px;
   height: 600px;
   width: auto;
-  width: 100%;
+  width: 200%;
   color: #141414;
   text-align: left;
   font-size: 16px;
@@ -176,7 +176,7 @@ figcaption {
   margin-left: -25px;
   height: 600px;
   width: auto;
-  width: 100%;
+  width: 200%;
   color: #141414;
   text-align: left;
   font-size: 16px;
@@ -242,7 +242,7 @@ figcaption {
   margin-left: -290px;
   height: 600px;
   width: auto;
-  width: 100%;
+  width: 200%;
   color: #141414;
   text-align: left;
   font-size: 16px;
@@ -436,3 +436,178 @@ figcaption {
 .snip1361-5.hover figcaption {
   top: 300px;
 }
+#tokyo {
+  background-image: url(../IMG/JAPAN/TOKYO/background.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 928px;
+  margin-top: -50px;
+}
+#osaka {
+  background-image: url(../IMG/JAPAN/OSAKA/background.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 928px;
+  margin-top: -50px;
+}
+#okinawa {
+  background-image: url(../IMG/JAPAN/OKINAWA/background.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 928px;
+  margin-top: -50px;
+}
+#kyoto {
+  background-image: url(../IMG/JAPAN/KYOTO/background.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 928px;
+  margin-top: -50px;
+}
+#montfuji {
+  background-image: url(../IMG/JAPAN/MONTFUJI/background.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 928px;
+  margin-top: -50px;
+}
+footer {
+  margin-top: 3480px;
+}
+.texte2 {
+  font-family: fantasy;
+}
+.titre2 {
+  font-family: fantasy;
+  font-weight: bold;
+}
+
+.tokyotower {
+  height: 700px;
+  width: auto;
+  grid-area: a;
+}
+.txtsectiontokyo {
+  grid-area: b;
+  font-size: 50px;
+  font-family: fantasy;
+  color: #01b6ff;
+  padding-left: 700px;
+  margin-top: -520px;
+  width: 200%;
+  background-color: rgba(255, 255, 255, 0.8)
+}
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+    padding-left: 50px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    transform: rotateY(180deg); 
+  }
+  #ville {
+    height: 500px;
+    width: 500px;
+  }
+  #ville2 {
+    height: 500px;
+    width: 500px;
+  }
+  .flex1 {
+    display: flex;
+    margin:50px;
+    margin-top: 150px;
+    justify-content: space-evenly;
+  }
+  .imgbouffe1 {
+    width: 500px;
+    height:  auto;
+  }
+  .textebouffe {
+    font-size: 40px;
+    font-family: fantasy;
+    border-bottom: 10px solid black;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .imgbouffe1:hover {
+    box-shadow: 0px 0px 15px 15px #01b6ff;
+    border-bottom: 2px solid #01b6ff;
+  }
+  .imgbouffe1:hover .textebouffe1{
+    border-bottom: 2px solid #01b6ff;
+  }
+  .imgbouffe2 {
+    width: 500px;
+    height:  auto;
+  }
+  .imgbouffe2:hover {
+    box-shadow: 0px 0px 15px 15px #01b6ff;
+  }
+  .imgbouffe3 {
+    width: 500px;
+    height:  auto;
+  }
+  .imgbouffe3:hover {
+    box-shadow: 0px 0px 15px 15px #01b6ff;
+  }
+  .txtokinawa {
+    color: #01b6ff;
+    font-family: fantasy;
+    font-size: 50px;
+    margin-left: 50px;
+  }
+  .videookinawa {
+    padding-left: 650px;
+  }
+  .imgkyoto {
+    height: 600px;
+    width: auto;
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+  .imgkyoto2 {
+    padding-left: 200px ;
+    margin-bottom: 100px;
+  }
+  .imgmontfuji {
+    height: 700px;
+    padding-left: 50px;
+  }
+  .imgmontfuji2 {
+    margin-top: -100px;
+    padding-left: 50px;
+  }

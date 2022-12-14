@@ -358,3 +358,7 @@ main a:hover, a:visited, a:link, a:active {
 .busan {
     margin-top: 20px;
 }
+
+footer {
+	margin-top: -50px;
+}
